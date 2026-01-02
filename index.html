@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience the ultimate desert safari adventure. Premium guided tours through breathtaking landscapes with expert guides and unforgettable memories."
+    />
+    <title>Desert Safari Adventure | Premium Desert Experiences</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="mainNav">
+      <div class="nav-container">
+        <a href="#home" class="logo">Safari</a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">Experience</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      id="home"
+      data-float-mode="hero"
+      data-float-x="50%"
+      data-float-y="42%"
+    >
+      <img src="assets/images/bg.jpg" alt="Desert landscape at golden hour" class="hero-bg" />
+      <div class="hero-overlay"></div>
+
+      <!-- Location Tag - Cinematic touch -->
+      <div class="hero-location">
+        <span class="location-coords">25.2048° N, 55.2708° E</span>
+        <span class="location-name">Dubai Desert Conservation Reserve</span>
+      </div>
+
+      <!-- Trip Info Panel - Redesigned -->
+      <div class="trip-info-panel">
+        <div class="trip-info-top">
+          <span class="trip-info-eyebrow">Available Daily</span>
+          <div class="trip-info-rating-row">
+            <span class="trip-info-rating-stars">★★★★★</span>
+            <span class="trip-info-rating-score">4.9</span>
+          </div>
+          <span class="trip-info-reviews">2,847 Reviews</span>
+        </div>
+
+        <div class="trip-info-stats-row">
+          <div class="trip-info-stat">
+            <span class="trip-info-stat-num">6</span>
+            <span class="trip-info-stat-label">Hours</span>
+          </div>
+          <div class="trip-info-stat-divider"></div>
+          <div class="trip-info-stat">
+            <span class="trip-info-stat-num">15</span>
+            <span class="trip-info-stat-label">Years</span>
+          </div>
+        </div>
+
+        <div class="trip-info-bottom">
+          <div class="trip-info-climate">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+            <span>Best: Oct — Apr</span>
+          </div>
+          <a href="#packages" class="trip-info-cta">Explore Packages</a>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <!-- (Single floating video button is provided globally and reused across sections) -->
+
+        <div class="hero-text-container">
+          <div class="hero-text">
+            <h1>
+              <span class="std">Desert Safari</span>
+              <span class="funk">ADVENTURE</span>
+            </h1>
+
+            <div class="text-separator"></div>
+
+            <div class="text-content-wrapper">
+              <p>
+                Discover the magic of endless dunes, golden sunsets, and starlit
+                nights. Our curated desert experiences blend adventure with
+                comfort, creating memories that last a lifetime.
+              </p>
+            </div>
+
+            <a href="#booking" class="hero-cta-btn">
+              <h5>Book Your Adventure</h5>
+            </a>
+
+            <!-- Location Tag - Moved inside for mobile positioning -->
+            <div class="hero-location hero-location-mobile">
+              <span class="location-coords">25.2048° N, 55.2708° E</span>
+              <span class="location-name"
+                >Dubai Desert Conservation Reserve</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="social-line">
+          <div class="line"></div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"
+              /></svg
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"
+              /></svg
+          ></a>
+          <a href="#" aria-label="Tripadvisor"
+            ><img
+              src="https://static.tacdn.com/img2/brand_refresh_2025/logos/logo.svg"
+              alt="Tripadvisor"
+          /></a>
+          <a href="#" aria-label="YouTube"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+              /></svg
+          ></a>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About / Experience Section -->
+    <section
+      class="about"
+      id="about"
+      data-float-mode="corner"
+      data-float-x="12%"
+      data-float-y="60%"
+    >
+      <div class="about-container">
+        <div class="about-intro">
+          <span class="section-label">The Experience</span>
+          <h2 class="section-title">Why Choose Our Safari</h2>
+          <p>
+            With over 15 years of expertise guiding travelers through the
+            world's most stunning desert landscapes, we craft journeys that are
+            safe, authentic, and truly unforgettable.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="16" cy="12" r="4" />
+                <path d="M16 2v2M16 22v8M26 12h2M4 12h2" />
+                <path
+                  d="M22.5 5.5l-1.5 1.5M11 11l-1.5-1.5M22.5 18.5l-1.5-1.5M11 13l-1.5 1.5"
+                />
+                <path d="M16 22l-6 6M16 22l6 6" />
+              </svg>
+            </div>
+            <h3>Expert Local Guides</h3>
+            <p>
+              Our certified guides possess deep knowledge of desert terrain,
+              local culture, and wildlife. They ensure your safety while sharing
+              fascinating insights about each destination.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 4l10 8v14H6V12l10-8z" />
+                <path d="M12 26v-8h8v8" />
+                <path d="M2 28h28" />
+                <circle cx="16" cy="14" r="2" />
+              </svg>
+            </div>
+            <h3>Premium Camps</h3>
+            <p>
+              Experience luxury under the stars in our thoughtfully designed
+              desert camps. Comfortable bedding, authentic cuisine, and modern
+              amenities in nature's embrace.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 28c-6.627 0-12-5.373-12-12S9.373 4 16 4s12 5.373 12 12"
+                />
+                <path d="M16 8v8l4 4" />
+                <path d="M24 20v8M20 24h8" />
+              </svg>
+            </div>
+            <h3>Sustainable Travel</h3>
+            <p>
+              We're committed to preserving desert ecosystems and supporting
+              local communities. Travel with us means leaving only footprints
+              and taking only memories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section
+      class="packages"
+      id="packages"
+      data-float-mode="corner"
+      data-float-x="90%"
+      data-float-y="20%"
+    >
+      <div class="packages-container">
+        <div class="packages-header">
+          <span class="section-label">Our Packages</span>
+          <h2 class="section-title">Choose Your Adventure</h2>
+          <p class="section-subtitle">
+            From sunrise dune drives to overnight camping under countless stars,
+            find the perfect experience for your desert journey.
+          </p>
+        </div>
+        <div class="packages-grid-two">
+          <div class="package-card-modern package-vip">
+            <span class="vip-badge">VIP Experience</span>
+            <div class="package-card-modern-inner">
+              <div class="package-img-modern-wrapper">
+                <img
+                  src="assets/images/asset (1).jpg"
+                  alt="VIP Red Dune Safari Experience"
+                  class="package-img-modern"
+                />
+                <div class="package-overlay-modern">
+                  <div class="package-overlay-content">
+                    <span class="package-duration-modern"
+                      >Half Day • 6 Hours</span
+                    >
+                    <h3 class="package-title-modern">VIP Red Dune Safari</h3>
+                    <div class="package-price-modern">
+                      150 AED <span>per person</span>
+                    </div>
+                    <ul class="package-features-modern">
+                      <li>VIP Seating & Table Service</li>
+                      <li>Red Dune Bashing</li>
+                      <li>Live BBQ Dinner</li>
+                      <li>Live Entertainment Shows</li>
+                    </ul>
+                    <a
+                      href="/vip-red-dune-safari/"
+                      class="btn btn-primary-modern"
+                      >View Package</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-card-modern">
+            <div class="package-card-modern-inner">
+              <div class="package-img-modern-wrapper">
+                <img
+                  src="assets/images/asset (2).jpg"
+                  alt="Evening Desert Safari Experience"
+                  class="package-img-modern"
+                />
+                <div class="package-overlay-modern">
+                  <div class="package-overlay-content">
+                    <span class="package-duration-modern"
+                      >Half Day • 6 Hours</span
+                    >
+                    <h3 class="package-title-modern">Evening Desert Safari</h3>
+                    <div class="package-price-modern">
+                      89 AED <span>per person</span>
+                    </div>
+                    <ul class="package-features-modern">
+                      <li>Hotel Pick & Drop</li>
+                      <li>30 Min Dune Bashing</li>
+                      <li>Camel Ride & Sunset View</li>
+                      <li>BBQ Dinner & Live Shows</li>
+                    </ul>
+                    <a
+                      href="/evening-desert-safari/"
+                      class="btn btn-primary-modern"
+                      >View Package</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Summary Section -->
+    <section class="reviews-summary" id="reviews">
+      <div class="reviews-container">
+        <div class="reviews-content">
+          <div class="reviews-left">
+            <span class="section-label">Trusted Worldwide</span>
+            <h2 class="section-title">Rated Excellent by Travelers</h2>
+            <p>
+              Join thousands of adventurers who've discovered the magic of the
+              desert with us. Our commitment to excellence has earned us top
+              ratings across all major travel platforms.
+            </p>
+            <a
+              href="https://www.tripadvisor.com"
+              target="_blank"
+              rel="noopener"
+              class="tripadvisor-badge"
+            >
+              <div class="tripadvisor-logo">🦉</div>
+              <div class="tripadvisor-info">
+                <strong>Excellent on TripAdvisor</strong>
+                <span>Read all 2,847 reviews →</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="reviews-right">
+            <div class="stat-card">
+              <div class="star-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <div class="stat-number">4.9</div>
+              <div class="stat-label">Average Rating</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">15K+</div>
+              <div class="stat-label">Happy Travelers</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Would Recommend</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <div class="testimonials-header">
+          <span class="section-label">Guest Stories</span>
+          <h2 class="section-title">What Our Travelers Say</h2>
+          <div class="accent-bar"></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-quote">
+              "An absolutely magical experience. Watching the sunset from the
+              dunes while our guide shared stories of the desert was
+              unforgettable. The overnight camp exceeded all expectations."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SC</div>
+              <div class="testimonial-info">
+                <h4>Sarah Chen</h4>
+                <span>Desert Overnight, March 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-quote">
+              "The team made our family feel so welcome. The kids loved the
+              camel ride, and the stargazing session was phenomenal. Already
+              planning our return trip!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MR</div>
+              <div class="testimonial-info">
+                <h4>Michael Roberts</h4>
+                <span>Family Adventure, February 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-quote">
+              "Professional, knowledgeable, and genuinely passionate about what
+              they do. Our guide's expertise made every moment educational and
+              exciting. Worth every penny."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AK</div>
+              <div class="testimonial-info">
+                <h4>Aisha Khalid</h4>
+                <span>Ultimate Expedition, January 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      class="gallery"
+      id="gallery"
+      data-float-mode="corner"
+      data-float-x="88%"
+      data-float-y="12%"
+    >
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <span class="section-label">Gallery</span>
+          <h2 class="section-title">Moments from the Desert</h2>
+          <div class="accent-bar"></div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/asset (3).jpg" alt="Golden sand dunes at sunset" />
+            <div class="gallery-overlay">
+              <h3>Golden Dunes</h3>
+              <p>Sunset over endless horizons</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="assets/images/asset (4).jpg"
+              alt="Camel caravan crossing the desert"
+            />
+            <div class="gallery-overlay">
+              <h3>Desert Caravan</h3>
+              <p>Traditional camel treks</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/asset (5).jpg" alt="Luxury desert camp at night" />
+            <div class="gallery-overlay">
+              <h3>Starlit Camps</h3>
+              <p>Luxury under the stars</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/asset (6).jpg" alt="4x4 dune bashing adventure" />
+            <div class="gallery-overlay">
+              <h3>Dune Adventure</h3>
+              <p>Thrilling 4x4 experiences</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/asset (7).jpg" alt="Desert wildlife and nature" />
+            <div class="gallery-overlay">
+              <h3>Desert Life</h3>
+              <p>Flora and fauna</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section
+      class="booking"
+      id="booking"
+      data-float-mode="corner"
+      data-float-x="12%"
+      data-float-y="88%"
+    >
+      <div class="booking-container">
+        <div class="booking-header">
+          <span class="section-label">Reserve Your Spot</span>
+          <h2 class="section-title">Book Your Adventure</h2>
+          <p>
+            Complete the form below and our team will confirm your booking
+            within 24 hours.
+          </p>
+        </div>
+
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+1 (555) 000-0000"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="package">Select Package</label>
+              <select id="package" name="package" required>
+                <option value="">Choose a package</option>
+                <option value="VIP Red Dune Safari - 150 AED">
+                  VIP Red Dune Safari — 150 AED
+                </option>
+                <option value="Evening Desert Safari - 89 AED">
+                  Evening Desert Safari — 89 AED
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="20"
+                placeholder="1"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Special Requests</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Any dietary requirements, accessibility needs, or special occasions?"
+            ></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              Book via WhatsApp
+            </button>
+
+            <div class="drop-text-wrap">
+              <button
+                type="button"
+                class="btn btn-primary drop-text-btn"
+                data-number="+971 50 123 4567"
+                aria-label="Copy number"
+              >
+                Copy Number
+              </button>
+              <span class="copy-badge" aria-hidden="true"
+                >+971 50 123 4567</span
+              >
+              <span class="copy-tooltip" aria-hidden="true">click to copy</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#home" class="logo">Safari</a>
+          <p>
+            Creating unforgettable desert experiences since 2009. Adventure
+            awaits in every dune, every sunset, every star.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Tripadvisor"
+              ><img
+                src="https://static.tacdn.com/img2/brand_refresh_2025/logos/logo.svg"
+                alt="Tripadvisor"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#about">Our Experience</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Packages</h3>
+          <ul>
+            <li><a href="/vip-red-dune-safari/">VIP Red Dune Safari</a></li>
+            <li><a href="/evening-desert-safari/">Evening Desert Safari</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:info@desertsafari.com">info@desertsafari.com</a></li>
+            <li><a href="https://wa.me/971501234567">+971 50 123 4567</a></li>
+            <li><span>Dubai, UAE</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Desert Safari Adventure. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating video play button (single component reused across sections) -->
+    <!-- <button id="floatingVideo" class="floating-video expand" aria-label="Play video" aria-haspopup="dialog">
+        <span class="fv-ring" aria-hidden="true"></span>
+        <svg class="fv-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true">
+            <path fill="currentColor" d="M8 5v14l11-7z" />
+        </svg>
+    </button> -->
+
+    <!-- Video modal (simple, accessible) -->
+    <div
+      id="videoModal"
+      class="video-modal"
+      role="dialog"
+      aria-hidden="true"
+      aria-label="Video player"
+    >
+      <div class="video-modal-inner">
+        <button id="modalClose" class="modal-close" aria-label="Close video">
+          ×
+        </button>
+        <div class="video-wrap">
+          <video
+            id="previewVideo"
+            controls
+            preload="none"
+            poster="assets/images/video-thumb.jpg"
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+          ></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/971501234567?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20desert%20safari%20packages."
+      target="_blank"
+      rel="noopener"
+      class="floating-whatsapp"
+      aria-label="Contact us on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.77.967-.94 1.164-.17.199-.343.223-.637.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
