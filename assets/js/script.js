@@ -323,7 +323,7 @@
         });
 
         const floatConfig = [
-            { id: 'home', x: '30%', y: '85%', mode: 'expand', img: 'assets/images/video-thumb.jpg' },
+            { id: 'home', x: '30%', y: '85%', mode: 'expand', img: 'assets/images/video-thumb.webp' },
             { id: 'about', x: '5%', y: '25%', mode: 'corner' },
             { id: 'packages', x: '95%', y: '80%', mode: 'corner' },
             { id: 'gallery', x: '95%', y: '18%', mode: 'corner' },
