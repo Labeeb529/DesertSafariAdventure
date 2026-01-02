@@ -40,8 +40,4 @@ Final Frontend/
 - Open `index.html` in a browser to view the homepage.
 - Ensure the `assets/` folder remains in the same relative location for styles, scripts, and images to load correctly.
 
-This version is professional, readable, and easy to share. The folder tree is preserved, and you’ve added context about the files and usage.
-
-If you want, I can also make a more “GitHub-friendly” version where the folder structure is rendered as a proper list instead of a code block—it looks cleaner online. Do you want me to do that?
-
 
