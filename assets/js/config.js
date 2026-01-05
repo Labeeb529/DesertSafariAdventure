@@ -11,7 +11,7 @@ const SITE_CONFIG = {
     packages: {
         vipRedDune: {
             name: 'VIP Red Dune Safari',
-            price: '150 AED'
+            price: '109 AED'
         },
         eveningDesert: {
             name: 'Evening Desert Safari',
