@@ -243,6 +243,26 @@ body.trip-page nav .hamburger span {
   text-transform: uppercase;
   transition: color var(--transition-base);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  transition: opacity var(--transition-base), filter var(--transition-base);
+}
+
+nav:not(.scrolled):not(.nav-dark) .logo-img {
+  filter: brightness(0) invert(1);
+}
+
+nav.scrolled .logo-img,
+nav.nav-dark .logo-img,
+body.trip-page nav .logo-img {
+  filter: none;
 }
 
 .nav-menu {
@@ -2037,6 +2057,13 @@ footer {
   display: inline-block;
 }
 
+.footer-brand .logo-img {
+  height: 45px;
+  width: auto;
+  max-width: 200px;
+  filter: brightness(0) invert(1);
+}
+
 .footer-brand p {
   color: var(--stone-light);
   font-size: 0.9375rem;
@@ -2663,6 +2690,16 @@ footer {
 
   .logo {
     font-size: 1.25rem;
+  }
+
+  .logo-img {
+    height: 32px;
+    max-width: 140px;
+  }
+
+  .footer-brand .logo-img {
+    height: 36px;
+    max-width: 160px;
   }
 
   /* Hero adjustments for small screens */
@@ -3433,10 +3470,12 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   color: var(--dusk-orange-deep);
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: baseline;
   gap: 0.5rem;
   line-height: 1;
+  margin: 0;
 }
 
 .new-price span {
@@ -3464,6 +3503,7 @@ footer {
 }
 
 .trip-sidebar-button {
+  display: block;
   width: 100%;
   padding: 0.95rem 1rem;
   background: linear-gradient(90deg, var(--dusk-orange), var(--dusk-orange-deep));
@@ -3474,10 +3514,12 @@ footer {
   font-size: 0.95rem;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   box-shadow: 0 10px 24px rgba(196, 110, 65, 0.18);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
   margin-bottom: 0.75rem;
+  box-sizing: border-box;
 }
 
 .trip-sidebar-button:hover {
@@ -3486,7 +3528,7 @@ footer {
 }
 
 .trip-sidebar-whatsapp {
-  display: inline-block;
+  display: block;
   width: 100%;
   text-align: center;
   padding: 0.6rem 0.75rem;
@@ -3496,6 +3538,7 @@ footer {
   border: 1px dashed rgba(216, 185, 150, 0.35);
   font-weight: 600;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .trip-sidebar-note {

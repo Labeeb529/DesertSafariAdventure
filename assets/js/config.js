@@ -4,8 +4,8 @@
  */
 const SITE_CONFIG = {
     whatsapp: {
-        number: '923556668428',
-        displayNumber: '+92 355 6668428',
+        number: '971553546168',
+        displayNumber: '+971 55 354 6168',
         defaultMessage: 'Hello! I would like to inquire about your desert safari packages.'
     },
     packages: {
@@ -32,16 +32,31 @@ function getWhatsAppLink(customMessage) {
  * Initialize all WhatsApp links across the site
  */
 function initWhatsAppLinks() {
-    const whatsappLinks = document.querySelectorAll('.floating-whatsapp, .trip-sidebar-whatsapp, [data-whatsapp]');
+    const whatsappLinks = document.querySelectorAll('.floating-whatsapp, .trip-sidebar-whatsapp, .footer-whatsapp, [data-whatsapp]');
     
     whatsappLinks.forEach(link => {
         if (link.classList.contains('floating-whatsapp')) {
             link.href = getWhatsAppLink();
         } else if (link.classList.contains('trip-sidebar-whatsapp')) {
-            const packageName = link.closest('.trip-sidebar')?.dataset.package || 'desert safari';
-            link.href = getWhatsAppLink(`Hi! I'm interested in booking the ${packageName}. Can you provide more details?`);
+            const sidebar = link.closest('.trip-sidebar-card');
+            const priceEl = sidebar?.querySelector('.new-price');
+            const price = priceEl ? priceEl.textContent.trim().split(' ')[0] : '';
+            const pageTitle = document.querySelector('.trip-hero-title')?.textContent || 'desert safari';
+            link.href = getWhatsAppLink(`Hi! I'm interested in the ${pageTitle}. Can you provide more details?`);
             link.textContent = `WhatsApp ${SITE_CONFIG.whatsapp.displayNumber}`;
+        } else if (link.classList.contains('footer-whatsapp')) {
+            link.href = getWhatsAppLink();
+            link.textContent = SITE_CONFIG.whatsapp.displayNumber;
         }
+    });
+
+    const sidebarButtons = document.querySelectorAll('.trip-sidebar-button');
+    sidebarButtons.forEach(btn => {
+        const sidebar = btn.closest('.trip-sidebar-card');
+        const priceEl = sidebar?.querySelector('.new-price');
+        const price = priceEl ? priceEl.textContent.trim().split(' ')[0] : '';
+        const pageTitle = document.querySelector('.trip-hero-title')?.textContent || 'Desert Safari';
+        btn.href = getWhatsAppLink(`Hi! I'd like to book the ${pageTitle} (${price}). Please share available dates.`);
     });
 
     const dropTextBtns = document.querySelectorAll('.drop-text-btn');
